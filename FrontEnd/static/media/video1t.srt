@@ -1,0 +1,287 @@
+1
+00:00:00,000 --> 00:00:02
+when you're building applications you
+
+2
+00:00:02 --> 00:00:03
+want them to deliver a great experience
+
+3
+00:00:03 --> 00:00:06
+for your users maybe you want your
+
+4
+00:00:06 --> 00:00:08
+application to generate in-app purchase
+
+5
+00:00:08 --> 00:00:11
+options during a gaming session rapidly
+
+6
+00:00:11 --> 00:00:13
+validate street address updates or make
+
+7
+00:00:13 --> 00:00:15
+image thumbnails available instantly
+
+8
+00:00:15 --> 00:00:19
+after a user uploads photos to make this
+
+9
+00:00:19 --> 00:00:21
+magic happen your application needs
+
+10
+00:00:21 --> 00:00:23
+back-end code that runs in response to
+
+11
+00:00:23 --> 00:00:25
+events like image uploads in app
+
+12
+00:00:25 --> 00:00:27
+activity website clicks or sensor
+
+13
+00:00:27 --> 00:00:31
+outputs but managing the infrastructure
+
+14
+00:00:31 --> 00:00:33
+to host and execute back-end code
+
+15
+00:00:33 --> 00:00:35
+requires you to size provision and scale
+
+16
+00:00:35 --> 00:00:38
+a bunch of servers manage operating
+
+17
+00:00:38 --> 00:00:40
+system updates apply security patches
+
+18
+00:00:40 --> 00:00:42
+and then monitor all this infrastructure
+
+19
+00:00:42 --> 00:00:44
+for performance and availability
+
+20
+00:00:44 --> 00:00:47
+wouldn't it be nice if you could just
+
+21
+00:00:47 --> 00:00:48
+focus on building great applications
+
+22
+00:00:48 --> 00:00:50
+without having to spend lots of time
+
+23
+00:00:50 --> 00:00:55
+managing servers introducing AWS lambda
+
+24
+00:00:55 --> 00:00:58
+AWS lambda is a compute service that
+
+25
+00:00:58 --> 00:01:00
+runs your back-end code in response to
+
+26
+00:01:00 --> 00:01:03
+events such as object uploads to Amazon
+
+27
+00:01:03 --> 00:01:06
+s3 buckets updates to Amazon DynamoDB
+
+28
+00:01:06 --> 00:01:09
+tables data and Amazon Kinesis dreams or
+
+29
+00:01:09 --> 00:01:13
+in-app activity once you upload your
+
+30
+00:01:13 --> 00:01:15
+code to lambda the service handles all
+
+31
+00:01:15 --> 00:01:17
+the capacity scaling patching and
+
+32
+00:01:17 --> 00:01:19
+administration of the infrastructure to
+
+33
+00:01:19 --> 00:01:22
+run your code and provides visibility
+
+34
+00:01:22 --> 00:01:24
+into performance by publishing real-time
+
+35
+00:01:24 --> 00:01:26
+metrics and logs to Amazon Cloud Watch
+
+36
+00:01:26 --> 00:01:31
+all you need to do is write the code AWS
+
+37
+00:01:31 --> 00:01:33
+lambda is very low cost and does not
+
+38
+00:01:33 --> 00:01:35
+require any upfront investment when you
+
+39
+00:01:35 --> 00:01:38
+use AWS lambda you're simply charged a
+
+40
+00:01:38 --> 00:01:40
+low fee per request and for the time
+
+41
+00:01:40 --> 00:01:42
+your code runs measured in increments of
+
+42
+00:01:42 --> 00:01:46
+100 milliseconds getting started with
+
+43
+00:01:46 --> 00:01:49
+AWS lambda is easy there are no new
+
+44
+00:01:49 --> 00:01:51
+languages tools or frameworks to learn
+
+45
+00:01:51 --> 00:01:54
+you can use any third-party library even
+
+46
+00:01:54 --> 00:01:57
+native ones the code you run on AWS
+
+47
+00:01:57 --> 00:02:00
+lambda is called a lambda function you
+
+48
+00:02:00 --> 00:02:02
+just upload your code as a zip file or
+
+49
+00:02:02 --> 00:02:04
+design it in the integrated development
+
+50
+00:02:04 --> 00:02:06
+environment in the AWS management
+
+51
+00:02:06 --> 00:02:10
+console or you can select from a list of
+
+52
+00:02:10 --> 00:02:12
+function samples pre-built for common
+
+53
+00:02:12 --> 00:02:13
+use cases
+
+54
+00:02:13 --> 00:02:16
+image conversion file compression and
+
+55
+00:02:16 --> 00:02:18
+change notifications and built-in
+
+56
+00:02:18 --> 00:02:21
+support for the AWS SDK makes it easy to
+
+57
+00:02:21 --> 00:02:24
+call other AWS services once your
+
+58
+00:02:24 --> 00:02:26
+function is loaded you select the event
+
+59
+00:02:26 --> 00:02:29
+source to monitor such as an Amazon s3
+
+60
+00:02:29 --> 00:02:32
+bucket or Amazon DynamoDB table and
+
+61
+00:02:32 --> 00:02:34
+within a few seconds lambda will be
+
+62
+00:02:34 --> 00:02:35
+ready to trigger your function
+
+63
+00:02:35 --> 00:02:39
+automatically when an event occurs with
+
+64
+00:02:39 --> 00:02:41
+lambda any event can trigger your
+
+65
+00:02:41 --> 00:02:42
+function making it easy to build
+
+66
+00:02:42 --> 00:02:44
+applications that respond quickly to new
+
+67
+00:02:44 --> 00:02:48
+information to learn more about AWS
+
+68
+00:02:48 --> 00:02:50
+lambda visit our website and you can get
+
+69
+00:02:50 --> 00:02:52
+your first lambda function up and
+
+70
+00:02:52 --> 00:02:54
+running with a few clicks in the AWS
+
+71
+00:02:54 --> 00:02:57
+management console and with the AWS free
+
+72
+00:02:57 --> 00:03:01
+tier you can try lambda for free

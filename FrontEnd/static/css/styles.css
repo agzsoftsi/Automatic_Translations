@@ -1,0 +1,285 @@
+/** 
+ * ---------------------------------------------------------------------------------------------------- 
+ * Body styles
+ * ----------------------------------------------------------------------------------------------------
+ *  - Add the basic style for all webpage: background-color, font-family, and Card Border configurations
+ *  - import a new Font: GT Walsheim Pro Regular
+ */
+
+/**
+ * @font-face : Importing a new Font [GT Walsheim Pro Regular]
+ */
+@font-face {
+    font-family: "GT Walsheim Pro Regular";
+    src: url("./GTWalsheimPro-Regular.ttf");
+  }
+
+/**
+ * Body: class
+ */  
+body {
+    background-color: #002333;
+    font-family: "GT Walsheim Pro Regular";
+    }
+
+/**
+ * Card: class
+ */
+.card{
+    border-radius: 0;
+    border: 0;
+}
+
+/** 
+ * ---------------------------------------------------------------------------------------------------- 
+ * Header styles
+ * ----------------------------------------------------------------------------------------------------
+ * - We are Using Bootstrap 4.5 to create a cards : card-header
+ * - Add the basic style for cards: background-color, Border and paddings configurations   
+ */
+
+/**
+ * Card-header: class
+ */
+.card-header {
+    background-color: #002333;
+    border-top: #00FE83 solid;
+    border-bottom: #00FE83 solid;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    padding: 15px;
+       
+}
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- 
+ * Footer styles
+ * ----------------------------------------------------------------------------------------------------
+ * - We are Using Bootstrap 4.5 to create a cards : card-footer
+ * - Add the basic style for cards: background-color, Border and paddings configurations    
+ */
+
+/**
+ * Card-footer: class
+ */
+.card-footer{
+    background-color: #002333;
+    border-top: #00FE83 solid;
+         
+}
+
+
+/** 
+ * ---------------------------------------------------------------------------------------------------- 
+ *  Video styles
+ * ----------------------------------------------------------------------------------------------------
+ *  - section: Content-Video
+ *  - We are Using some Bootstrap 4.5 features: card-body
+ *  - Add the basic style for cards: background-color, Border and paddings configurations
+ *  - bg-video : background color
+ *  - titlevideo : main title of the video
+ *  - video: define the normal width and maximun width of the video    
+ */
+
+/**
+ * Bg-video: class
+ */ 
+.bg-video{
+    background-color: #002333;
+}
+
+
+/**
+ * Titlevideo: class
+ */ 
+.titlevideo{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
+/**
+ * video: element
+ */ 
+video{
+    width:100%;
+    max-width:1000px;
+    }
+
+
+/** 
+  * ---------------------------------------------------------------------------------------------------- 
+  * Trascriptions styles
+  * ----------------------------------------------------------------------------------------------------
+  * - section: Content-Select, Content-Transcription
+  * - We are Using some Bootstrap 4.5 features: card-body
+  * - bg-transcription: background of the transcription style
+  * - textresp: Responsive text properties 
+  * - data: contain all subtitles of the transcription
+  * - flaground: styles for the flag image for each language
+  */
+
+
+/**
+ * bg-transcription: class
+ */
+.bg-transcription{
+    background-color: #002333;
+
+}
+
+/**
+ * textresp: class
+ */
+.textresp{
+    font-size: calc(1em + 0.4vw);
+    padding: 15px;
+    text-align: left;
+}
+
+/**
+ * Titletrans: class
+ */
+.Titletrans {
+    background-color: #00FE83;
+    padding: 5px;
+    color: #002333;
+    width: auto;
+    font: 20px sans-serif;
+    
+}
+
+
+/**
+ * Titletrans: class
+ */
+.Texttrans {
+    color: white;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+
+/**
+ * Titletrans: id
+ */
+#data{
+    color: white;
+}
+
+
+
+/**
+ * content: class
+ */
+.content {
+    width: auto;
+    padding-top: 150px;
+    align-content: center;
+    margin-left: 5px;
+    
+}
+
+/**
+ * flaground: class
+ */
+.flaground{
+border-radius: 100px;
+width: 40px;
+height: 40px;
+border:2px solid #00FE83;
+}
+
+
+/**
+ * borderT: class
+ */
+.borderT {
+    border: #00FE83 solid;
+    border-width: 1px;
+    width: 100%;
+    
+
+}
+
+/**
+ * ---------------------------------------------------------------------------------------------------- 
+ *  Select styles
+ *  ----------------------------------------------------------------------------------------------------
+ *  - section: select
+ *  - We are Using some Bootstrap 4.5 features: card-body
+ *  - configure the postition on the card
+ */
+
+select {
+    margin-right: 5px;
+}
+
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- 
+ *  Subtitle styles
+ *  ----------------------------------------------------------------------------------------------------
+ *  - section: subt, hover
+ *  - We are Using some Bootstrap 4.5 features: card-body
+ *  - subt: link on normal state
+ *  - subt:hover link on over mouse state
+ */
+
+ 
+ /**
+ * subt : class
+ */
+.subt{
+    color: white;
+    transition: background-color .9s;
+}
+
+
+ /**
+ * subt:hover : class
+ */
+.subt:hover{
+    background-color: #00FE83;
+    color: black;
+    cursor: pointer;
+    
+    }
+
+
+/**
+ * ---------------------------------------------------------------------------------------------------- 
+ *  NAV styles
+ *  ----------------------------------------------------------------------------------------------------
+ *  - section: nav-link, hover
+ *  - We are Using some Bootstrap 4.5 features: card-body
+ *  - font styles
+ *  - a: link on normal state
+ *  - a:hover link on over mouse state
+ */
+
+ /**
+ * nav-link : class
+ */
+.nav-link{
+    font-weight: bolder;
+}
+
+/**
+ * a: element
+ */
+a{
+    color: #002333;
+}
+
+/**
+ * a:hove
+ */
+a:hover{
+    color: #3722d3;
+}
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- START link icon from Skillsahre-->
+    <link rel="icon" href="https://static.skillshare.com/assets/images/favicons/favicon-128.png" sizes="128x128" type="image/png">
+    <!-- END link icon from Skillsahre-->
+
+    <!-- START link BOOTSTAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./static/scripts/jquery-1.11.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- END link BOOTSTAP 4-->
+
+    <!-- START link General styles CSS-->
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <!-- END llink General styles CSS-->
+
+
+    <title>DEMO-Transtale-Transcriptions</title>
+</head>
+<body>
+  <div class="card text-center">
+        <!-- START header-->
+        <div class="card-header">
+          <img src="./static/media/logo.png" class="img-fluid float-left" alt="Responsive image">
+          <img src="./static/media/TitleTop.png" class="img-fluid float-right" alt="Responsive image">
+        </div>
+        <!-- END header-->
+
+        <!-- START Content-->
+        
+        <div class="card-body bg-video">
+          <p></p>
+          <h4 class="text-center titlevideo">Introduction to AWS Lambda</h4>
+        </div>
+
+
+
+        <!-- START Content-Video-->
+        <div class="card-body bg-video">
+          <video src="static/media/video1.mp4" width="100%" controls id="vid" poster="static/media/logovdeo.png">
+            This browser does not support this video <code>video</code>.
+        </video>
+        </div>
+
+
+
+
+        <!-- START Content-Nav-->
+        <div class="card-body bg-light">
+          
+
+
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="discussions-tab" data-toggle="tab" href="#discussions" role="tab" aria-controls="discussions" aria-selected="false">Discussions</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects & Resources</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="transcription-tab" data-toggle="tab" href="#transcription" role="tab" aria-controls="transcription" aria-selected="true">Transcription</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+                <!-- START Content-Nav-TAB1-->
+                <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab" id="tb1">
+                      <div class="card-body bg-white text-left p-3">
+                      <h3>About This Class</h3> 
+                      <p> In this course, we would explore Amazon Cloud- Amazon Web Services.</p> 
+                      <p>Learn all the available services under catalog, and what we can do with each service provided with platform and Infrastructure categories. This course covers-
+                      , Network, Boilerplates, DevOps, Mobile, Analytics, Alexa, CloudFoundry, Kubernetes, etc</p> 
+                      <p> later parts we would develop and deploy our test applications on AWS.</p>
+                      </div>
+                </div>
+                <!-- START Content-Nav-TAB2-->
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                  <div class="card-body bg-white justify-content-center p-3">
+                    <h3>How students rated this class</h3> 
+                    <img src="./static/media/review1.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./static/media/review2.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./static/media/review3.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <!-- START Content-Nav-TAB3-->
+                <div class="tab-pane fade" id="discussions" role="tabpanel" aria-labelledby="discussions-tab">
+                  <div class="card-body bg-white justify-content-center p-3">
+                    <img src="./static/media/discussion.jpg" class="img-fluid" alt="Responsive image">
+                  </div>
+                </div>
+                <!-- START Content-Nav-TAB4-->
+                <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                  <div class="card-body bg-white text-left p-3">
+                    <h3>Project Description</h3> 
+                    <p>You have to create an AWS lambda instance on Amazon cloud.</p>
+                    <p>You can integrate various cloud services such as API Gateway, Mobile Hub, Cloud Watch, IAM, S3, etc with Lambda to build a business solution.</p>
+                    <p>Once you finish the course you need to design the below high available aws architecture. This architecture should be self healing that means if any of the EC2 instance crashed it should automatically created again. To Design High available architecture you need to use below aws components</p>
+                  </div>
+               </div>
+               <!-- START Content-Nav-TAB5-->
+               <div class="tab-pane fade show active" id="transcription" role="tabpanel" aria-labelledby="transcription-tab">
+              
+                      <!-- START Content-Select-->
+                          <div class="card-body bg-white p-3">
+                            <h6>
+                              <span id="flaglang"></span>
+                              <span id="language"></span>
+                                <select id="target" onchange="loadTranscription()">
+                                  <option value="en" title="English">ENGLISH</option>
+                                  <option value="es" title="Spanish">ESPAÑOL</option>
+                                  <option value="fr" title="French">FRANÇAIS</option>
+                                  <option value="pt" title="Portuguese">PORTUGUÊS</option>
+                                  <option value="de" title="German">DEUTSCHE</option>
+                                  <option value="hi" title="Hindi">हिन्दी</option>
+                                  <option value="ar" title="Arab">عرب</option>
+                                  <option value="ru" title="Russian">РУССКИЙ</option>
+                                  <option value="ja" title="Japanese">日本語</option>
+                                </select>
+                                 <!-- START Content-PresentationSubtitles-->
+                                <span id="transcPresentation">Presentation</span>
+                                <select id="transpresent" onchange="loadTranscription()">
+                                  <option value="sub" title="Subtitles">SUBTITLES</option>
+                                  <option value="par" title="Paragraphs">PARAGRAPHS</option>
+                                </select>
+                                
+                            </h6>
+                          </div>
+
+                      <!-- START Content-Transcription-->
+                      <div class="card-body bg-transcription">
+                        <div class="Texttrans textresp d-flex justify-content-center" id="data"></div>
+                      </div>
+              </div>
+          </div>
+        </div>
+        
+     
+       <!-- START footer-->
+        <div class="card-footer text-muted">
+          <h6>ZombielandCLI</h6><h6>Colombia - Cali - 2020</h6>
+        </div>
+        <!-- END footer-->
+
+      </div>
+        <!-- END content-->
+  
+
+     <!--START Javascript-->
+    <script src="./static/scripts/getTranscription.js"></script>
+    <!--END Javascript-->
+ </body>
+</html>
