@@ -1,0 +1,92 @@
+Language        Code    step
+Afrikaans       af      
+Albanian        sq
+Amharic         am
+Arabic          ar      1200
+Azerbaijani     az
+Bengali         bn
+Bosnian         bs
+Bulgarian       bg
+Chinese (Simp.) zh
+Chinese (Trad.) zh-TW
+Croatian        hr
+Czech           cs
+Danish          da      
+Dari            fa-AF
+Dutch           nl      
+English         en      4990
+Estonian        et      
+Finnish         fi      
+French          fr      4990
+French (Canada) fr-CA   4990
+Georgian        ka
+German          de      4990
+Greek           el      4990
+Hausa           ha
+Hebrew          he      4990
+Hindi           hi      4990
+Hungarian       hu
+Indonesian      id
+Italian         it
+Japanese        ja
+Korean          ko
+Latvian         lv
+Malay           ms
+Norwegian       no
+Persian         fa
+Pashto          ps
+Polish          pl
+Portuguese      pt
+Romanian        ro
+Russian         ru
+Serbian         sr
+Slovak          sk
+Slovenian       sl
+Somali          so
+Spanish         es      4990
+Spanish (Mex.)  es-MX
+Swahili         sw
+Swedish         sv
+Tagalog         tl
+Tamil           ta
+Thai            th
+Turkish         tr
+Ukrainian       uk
+Urdu            ur
+Vietnamese      vi
+
+
+af 	Afrikaans 	hy 	Armenian 	ps 	Pashto
+am 	Amharic 	ilo 	Iloko 	qu 	Quechua
+ar 	Arabic 	id 	Indonesian 	ro 	Romanian
+as 	Assamese 	is 	Icelandic 	ru 	Russian
+az 	Azerbaijani 	it 	Italian 	sa 	Sanskrit
+ba 	Bashkir 	jv 	Javanese 	si 	Sinhala
+be 	Belarusian 	ja 	Japanese 	sk 	Slovak
+bn 	Bengali 	kn 	Kannada 	sl 	Slovenian
+bs 	Bosnian 	ka 	Georgian 	sd 	Sindhi
+bg 	Bulgarian 	kk 	Kazakh 	so 	Somali
+ca 	Catalan 	km 	Central Khmer 	es 	Spanish
+ceb 	Cebuano 	ky 	Kirghiz 	sq 	Albanian
+cs 	Czech 	ko 	Korean 	sr 	Serbian
+cv 	Chuvash 	ku 	Kurdish 	su 	Sundanese
+cy 	Welsh 	la 	Latin 	sw 	Swahili
+da 	Danish 	lv 	Latvian 	sv 	Swedish
+de 	German 	lt 	Lithuanian 	ta 	Tamil
+el 	Greek 	lb 	Luxembourgish 	tt 	Tatar
+en 	English 	ml 	Malayalam 	te 	Telugu
+eo 	Esperanto 	mr 	Marathi 	tg 	Tajik
+et 	Estonian 	mk 	Macedonian 	tl 	Tagalog
+eu 	Basque 	mg 	Malagasy 	th 	Thai
+fa 	Persian 	mn 	Mongolian 	tk 	Turkmen
+fi 	Finnish 	ms 	Malay 	tr 	Turkish
+fr 	French 	my 	Burmese 	ug 	Uighur
+gd 	Scottish Gaelic 	ne 	Nepali 	uk 	Ukrainian
+ga 	Irish 	new 	Newari 	ur 	Urdu
+gl 	Galician 	nl 	Dutch 	uz 	Uzbek
+gu 	Gujarati 	no 	Norwegian 	vi 	Vietnamese
+ht 	Haitian 	or 	Oriya 	yi 	Yiddish
+he 	Hebrew 	pa 	Punjabi 	yo 	Yoruba
+hi 	Hindi 	pl 	Polish 	zh 	Chinese (Simplified)
+hr 	Croatian 	pt 	Portuguese 	zh-TW 	Chinese (Traditional)
+hu 	Hungarian 	  	  	  	 
