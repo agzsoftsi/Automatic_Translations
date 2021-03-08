@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- START link icon from Skillsahre-->
+    <link rel="icon" href="https://static.skillshare.com/assets/images/favicons/favicon-128.png" sizes="128x128" type="image/png">
+    <!-- END link icon from Skillsahre-->
+
+    <!-- START link BOOTSTAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="./static/scripts/jquery-1.11.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!-- END link BOOTSTAP 4-->
+
+    <!-- START link General styles CSS-->
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <!-- END llink General styles CSS-->
+
+
+    <title>DEMO-Transtale-Transcriptions</title>
+</head>
+<body>
+  <div class="card text-center">
+        <!-- START header-->
+        <div class="card-header fixed-top">
+          <img src="./static/media/logo.png" class="img-fluid float-left" alt="Responsive image">
+        <!--  <img src="./static/media/TitleTop.png" class="img-fluid float-right" alt="Responsive image">-->
+        </div>
+        <!-- END header-->
+
+        <!-- START Content-->
+        
+      
+
+        <!-- START Content-Video/list -->
+        <div class="row bg-video ContentVideolist justify-content-center">
+            <div class="col-sm-7 bg-video">
+
+              <!-- START Content-Video-->
+                      <div class="card-body bg-video">
+                        <h3 class="text-white text-left">3D Illustration: Creating Isometric Designs in Adobe Illustrator</h3>
+                        <h5 class="text-white text-left"><span id="titleVideo"></span></h5>
+                        <video width="100%" controls id="vid" poster="" onprogress="followVideo()" autoplay>
+                          <source src="static/media/videos/video1.mp4" type="video/mp4">
+                            <track id="vids1" kind="subtitles" label="English" src="./static/media/Videos/video1S_en.vtt" srclang="en" default></track>
+                            <track id="vids2" kind="subtitles" label="Spanish" src="./static/media/Videos/video1S_es.vtt" srclang="es"></track>
+                            <track id="vids3" kind="subtitles" label="French" src="./static/media/Videos/video1S_fr.vtt" srclang="fr"></track>
+                                        This browser does not support this video <code>video</code>.
+                        </video>
+
+                      </div> 
+          </div>  
+          
+          <div class="col-sm-3 bg-video contentList">
+                      
+            <div class="listplayer">
+
+                      <div class="card-body videoItem iconList" onclick="watchVideo(1);" id="lvideo1">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>1. Introduction</span> <span style="float: right;">1:41</span> 
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(2);" id="lvideo2">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>2. What is Isometric Illustration?</span><span style="float: right;">3:36</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(3);" id="lvideo3">
+                        <span class="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>3. Planning & Sketching</span><span style="float: right;">15:18</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(4);" id="lvideo4">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>4. Determining Your Light Source</span><span style="float: right;">6:20</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(5);" id="lvideo5">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>5. Creating Your Grid</span><span style="float: right;">5:10</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(6);" id="lvideo6">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>6. Choosing Style & Color</span> <span style="float: right;">10:40</span> 
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(7);" id="lvideo7">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>7. Customizing Isometric Cubes</span><span style="float: right;">12:43</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(8);" id="lvideo8">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>8. Tools: 3D Rotate, Reflect, & Blend</span><span style="float: right;">14:44</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(9);" id="lvideo9">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>9. Tools: 3D Extrude</span><span style="float: right;">12:38</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(10);" id="lvideo10">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>10. Tools: 3D Extrude</span><span style="float: right;">14:03</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(11);" id="lvideo11">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>11. Putting It All Together</span><span style="float: right;">6:41</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(12);" id="lvideo12">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>12. Final Thoughts</span><span style="float: right;">0:19</span>
+                      </div>
+                      <div class="card-body videoItem iconList" onclick="watchVideo(13);" id="lvideo13">
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span>13. Learn More with DKNG</span><span style="float: right;">0:33</span>
+                      </div>
+                      
+              </div>
+           </div>
+              
+
+        </div>
+
+      
+        <!-- End Content-Video/list -->
+
+
+
+        <!-- START Content-Nav-->
+        <div class="card-body bg-light">
+          
+
+
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">About</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="discussions-tab" data-toggle="tab" href="#discussions" role="tab" aria-controls="discussions" aria-selected="false">Discussions</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects & Resources</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="transcription-tab" data-toggle="tab" href="#transcription" role="tab" aria-controls="transcription" aria-selected="true">Transcription</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+                <!-- START Content-Nav-TAB1-->
+                <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab" id="tb1">
+                      <div class="card-body bg-white text-left p-3">
+                      <h3>About This Class</h3> 
+                      <p> In this course, we would explore Amazon Cloud- Amazon Web Services.</p> 
+                      <p>Learn all the available services under catalog, and what we can do with each service provided with platform and Infrastructure categories. This course covers-
+                      , Network, Boilerplates, DevOps, Mobile, Analytics, Alexa, CloudFoundry, Kubernetes, etc</p> 
+                      <p> later parts we would develop and deploy our test applications on AWS.</p>
+                      </div>
+                </div>
+                <!-- START Content-Nav-TAB2-->
+                <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                  <div class="card-body bg-white justify-content-center p-3">
+                    <h3>How students rated this class</h3> 
+                    <img src="./static/media/review1.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./static/media/review2.jpg" class="img-fluid" alt="Responsive image">
+                    <img src="./static/media/review3.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                </div>
+                <!-- START Content-Nav-TAB3-->
+                <div class="tab-pane fade" id="discussions" role="tabpanel" aria-labelledby="discussions-tab">
+                  <div class="card-body bg-white justify-content-center p-3">
+                    <img src="./static/media/discussion.jpg" class="img-fluid" alt="Responsive image">
+                  </div>
+                </div>
+                <!-- START Content-Nav-TAB4-->
+                <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+                  <div class="card-body bg-white text-left p-3">
+                    <h3>Project Description</h3> 
+                    <p>You have to create an AWS lambda instance on Amazon cloud.</p>
+                    <p>You can integrate various cloud services such as API Gateway, Mobile Hub, Cloud Watch, IAM, S3, etc with Lambda to build a business solution.</p>
+                    <p>Once you finish the course you need to design the below high available aws architecture. This architecture should be self healing that means if any of the EC2 instance crashed it should automatically created again. To Design High available architecture you need to use below aws components</p>
+                  </div>
+               </div>
+               <!-- START Content-Nav-TAB5-->
+               <div class="tab-pane fade show active" id="transcription" role="tabpanel" aria-labelledby="transcription-tab">
+              
+                      <!-- START Content-Select-->
+                          <div class="card-body bg-white p-3">
+                            <h6>
+                              <span id="flaglang"></span>
+                              <span id="language"></span>
+                                <select id="target" onchange="loadTranscription()";>
+                                  <option value="en" title="English">ENGLISH</option>
+                                  <option value="es" title="Spanish">ESPAÑOL</option>
+                                  <option value="fr" title="French">FRANÇAIS</option>
+                                  
+                                  
+                                </select>
+                                 <!-- START Content-PresentationSubtitles-->
+                                <span id="transcPresentation"></span>
+                                <select id="transpresent" onchange="loadTranscription()">
+                                  <option value="sub" title="Subtitles">SUBTITLES</option>
+                                  <option value="par" title="Paragraphs">PARAGRAPHS</option>
+                                </select>
+                                
+                            </h6>
+                          </div>
+
+                      <!-- START Content-Transcription-->
+                      <div class="card-body bg-transcription">
+                        <div class="Texttrans textresp d-flex justify-content-center" id="data"></div>
+                      </div>
+              </div>
+          </div>
+        </div>
+        
+     
+       <!-- START footer-->
+        <div class="card-footer text-muted">
+          <h6>ZombielandCLI</h6><h6>Colombia - Cali - 2020</h6>
+        </div>
+        <!-- END footer-->
+
+      </div>
+        <!-- END content-->
+  
+
+     <!--START Javascript-->
+    <script src="./static/scripts/getTranscriptionTest.js"></script>
+    <!--END Javascript-->
+ </body>
+</html>
