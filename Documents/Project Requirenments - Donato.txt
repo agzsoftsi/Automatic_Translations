@@ -1,0 +1,27 @@
+Also, here's a basic todo list that we can follow. If we want to use a "real" ticketing system we can consider it:
+
+[x] Create user workflow(s)
+[x] Establish technologies to be used (GraphQL & Typescript)
+[ ] Establish frameworks to be used. I recommend Apollo for GraphQL layer & an AWS lambda w/ serverless framework. We are open to other preferences, though.
+[ ] Create basic architecture diagram
+[ ] Create HelloWorld API service using technologies decided on from above.
+[ ] Add parameters to API service (TargetLanguageCode, SourceLanguageCode, TextSource)
+[ ] Connect AWS Translate
+
+...
+
+Backlog
+[ ] Optimize user experience
+[ ] Add documentation
+[ ] Create IaC for service
+[ ] Create tests for service
+[ ] Add logging & monitoring
+[ ] Add supported events (API Gateway & other events such as video upload)
+
+
+Overall Goal:
+Create an API service that can take in three parameters (TargetLanguageCode, SourceLanguageCode, TextSource). From these three parameters, the API service should take the TextSource and then pass it through to AWS translate. Based on TargetLanguageCode and SourceLanguageCode, AWS translate will respond with the translated transcript. Future considerations include _how_ the API service will be triggered. For example; via an API Gateway, directly from an upload event, or other events.
+
+I didn't realize it, but in our project definition document, we actually call out that we want to use GraphQL & Typescript, so let's go ahead and use that.
+
+https://github.com/skillshare-mentorship/holberton-translate-transcriptions

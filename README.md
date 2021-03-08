@@ -4,7 +4,7 @@
 
 Generate translations for transcripts your videos into many languages automatically, using the power of AWS Cloud Computing technologies (Amazon Web Services) you can enjoy in your favorite language and with the control of each time section the content of the video . A perfect way to avoid missing relevant data from your multimedia content.
 
-![](Demov2.jpg)
+![](Demov1.jpg)
 ## About Project
 
 This project is developed as a final presentation of 9 months of fundamentals at Holberton School, where we implement different mechanics to solve a specific problem regarding Design (architecture) and programming..
@@ -12,6 +12,7 @@ This project is developed as a final presentation of 9 months of fundamentals at
 For this project we were working on a Skillshare client need, where we were for several sessions sharing and developing the product to the satisfaction of the client.
 
 This project has a great purpose for the three members of the ZOMBLIELANDCLI team (Carlos Garc�a, Leonardo Calder�n and Iv�n Lasso), which allows them to put into practice their skills from what they have learned in fundamentals and to be able to be used as a productive sample in our personal portfolio.
+![](Demov2.jpg)
 
 ## About Product
 
@@ -19,16 +20,16 @@ The main objective of the project is to generate the translation of an existing 
 
 ## Content
 
-1. [Landing Page](/https://agzsoftsi.github.io/Automatic_Translations/)
-2. [FrontEnd](/FrontEnd)
+#### 1. [Landing Page](https://agzsoftsi.github.io/Automatic_Translations/)
+#### 2. [FrontEnd](/FrontEnd)
 - - [HTML - Demov1](FrontEnd/index.html)
 - - - [Script](FrontEnd/static/scripts/getTranscription.js)
 
 - [HTML - Demov2](FrontEnd/index.html)
 - - - [Script](FrontEnd/static/scripts/getTranscriptionTest.js)
-- [BackEnd](/BackEnd)
-- [API](/API)
-- [Documents](/Documents)
+#### 3. [BackEnd](/BackEnd)
+#### 4. [API](/API)
+#### 5. [Documents](/Documents)
 
 ## Program Overview
 
