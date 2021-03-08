@@ -21,6 +21,11 @@ The main objective of the project is to generate the translation of an existing 
 
 - [Landing Page](/https://agzsoftsi.github.io/Automatic_Translations/)
 - [FrontEnd](/FrontEnd)
+> - [HTML - Demov1](FrontEnd/index.html)
+> > - [Script](FrontEnd/static/scripts/getTranscription.js)
+
+> - [HTML - Demov2](FrontEnd/index.html)
+> > - [Script](FrontEnd/static/scripts/getTranscriptionTest.js)
 - [BackEnd](/BackEnd)
 - [API](/API)
 - [Documents](/Documents)
