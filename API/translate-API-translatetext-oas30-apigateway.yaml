@@ -1,0 +1,389 @@
+openapi: "3.0.1"
+info:
+  title: "translate-API"
+  description: "API that takes a transcript file in srt format and translates it into\
+    \ a target language. The file is taken from an aws s3 bucket, which must have\
+    \ read permissions and its defined an a enviroment variable called [bucket] defined\
+    \ in al lambda function(translate-function) . A lambda function is executed that\
+    \ receives 2 query string parameters, [TargetLang] as the target language and\
+    \ [Bucketkey] as the file name."
+  contact:
+    name: "Skillshare Mentorship"
+    email: "hello@skillshare.com"
+  version: "2020-06-11T21:51:45Z"
+servers:
+- url: "https://ytuln8zsz1.execute-api.us-east-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: "/translatetext"
+paths:
+  /:
+    get:
+      description: "Gets a JSON format translated into a target language, for an SRT\
+        \ file of a source language transcript\nJSON format:\n\tindex: integer,\n\t\
+        start: hh: mm: ss, ms -> hh: mm: ss, ms,\n\t content: Text Translated"
+      parameters:
+      - name: "Bucketkey"
+        in: "query"
+        description: "name of s3 file, Bucket Key"
+        required: true
+        schema:
+          type: "string"
+      - name: "TargetLang"
+        in: "query"
+        description: "Target language to translate Text"
+        required: true
+        schema:
+          type: "string"
+      responses:
+        404:
+          description: "Bad QueryString Parameter:Video transcription file not found\
+            \ or Translation was not possible"
+          headers:
+            Access-Control-Allow-Origin:
+              description: "console.aws.amazon.com"
+              schema:
+                type: "string"
+            body:
+              description: "Bad QueryString Parameter:Video transcription file not\
+                \ found or Translation was not possible"
+              schema:
+                type: "string"
+            targetKey:
+              description: "translated s3 resource name"
+              schema:
+                type: "string"
+            Content-Type:
+              description: "Always application/json"
+              schema:
+                type: "string"
+            status:
+              description: "Not Found"
+              schema:
+                type: "string"
+          content: {}
+        200:
+          description: "OK"
+          headers:
+            Access-Control-Allow-Origin:
+              description: "console.aws.amazon.com"
+              schema:
+                type: "string"
+            body:
+              description: "Object JSON format with the text translated into the target\
+                \ language"
+              schema:
+                type: "string"
+            targetKey:
+              description: "translated s3 resource name"
+              schema:
+                type: "string"
+            Content-Type:
+              description: "Always application/json"
+              schema:
+                type: "string"
+            status:
+              description: "OK"
+              schema:
+                type: "string"
+          content: {}
+        500:
+          description: "An error occurred executing the aws Translate service"
+          headers:
+            Access-Control-Allow-Origin:
+              description: "console.aws.amazon.com"
+              schema:
+                type: "string"
+            body:
+              description: "Internal Error"
+              schema:
+                type: "string"
+            targetKey:
+              description: "translated s3 resource name"
+              schema:
+                type: "string"
+            Content-Type:
+              description: "Always application/json"
+              schema:
+                type: "string"
+            status:
+              description: "Internal Error"
+              schema:
+                type: "string"
+          content: {}
+        412:
+          description: "Video language not soported"
+          headers:
+            Access-Control-Allow-Origin:
+              description: "console.aws.amazon.com"
+              schema:
+                type: "string"
+            body:
+              description: "Video language not soported"
+              schema:
+                type: "string"
+            targetKey:
+              description: "translated s3 resource name"
+              schema:
+                type: "string"
+            Content-Type:
+              description: "Always application/json"
+              schema:
+                type: "string"
+            status:
+              description: "Precondition Failed"
+              schema:
+                type: "string"
+          content: {}
+      x-amazon-apigateway-request-validator: "Validate body, query string parameters,\
+        \ and headers"
+      x-amazon-apigateway-integration:
+        uri: "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:017784105438:function:translate-function/invocations"
+        responses:
+          default:
+            statusCode: "200"
+        passthroughBehavior: "when_no_match"
+        httpMethod: "POST"
+        contentHandling: "CONVERT_TO_TEXT"
+        type: "aws_proxy"
+components: {}
+x-amazon-apigateway-documentation:
+  version: "1.3"
+  createdDate: "2020-06-12T00:13:52Z"
+  documentationParts:
+  - location:
+      type: "API"
+    properties:
+      title: "translate-API"
+      version: "1.0"
+      info:
+        description: "API that takes a transcript file in srt format and translates\
+          \ it into a target language. The file is taken from an aws s3 bucket, which\
+          \ must have read permissions and its defined an a enviroment variable called\
+          \ [bucket] defined in al lambda function(translate-function) . A lambda\
+          \ function is executed that receives 2 query string parameters, [TargetLang]\
+          \ as the target language and [Bucketkey] as the file name."
+        contact:
+          name: "Skillshare Mentorship"
+          email: "hello@skillshare.com"
+  - location:
+      type: "METHOD"
+      method: "GET"
+    properties:
+      description: "Gets a JSON format translated into a target language, for an SRT\
+        \ file of a source language transcript\nJSON format:\n\tindex: integer,\n\t\
+        start: hh: mm: ss, ms -> hh: mm: ss, ms,\n\t content: Text Translated"
+      consumes: "ytuln8zsz1.execute-api.us-east-1.amazonaws.com/translatetext"
+      produced: "application/json"
+  - location:
+      type: "QUERY_PARAMETER"
+      method: "GET"
+      name: "Bucketkey"
+    properties:
+      description: "name of s3 file, Bucket Key"
+  - location:
+      type: "QUERY_PARAMETER"
+      method: "GET"
+      name: "TargetLang"
+    properties:
+      description: "Target language to translate Text"
+  - location:
+      type: "RESOURCE"
+    properties:
+      properties:
+        description: "The root resource with the default path specification."
+  - location:
+      type: "RESPONSE"
+      method: "GET"
+      statusCode: "200"
+    properties:
+      description: "OK"
+  - location:
+      type: "RESPONSE"
+      method: "GET"
+      statusCode: "404"
+    properties:
+      description: "Bad QueryString Parameter:Video transcription file not found or\
+        \ Translation was not possible"
+  - location:
+      type: "RESPONSE"
+      method: "GET"
+      statusCode: "412"
+    properties:
+      description: "Video language not soported"
+  - location:
+      type: "RESPONSE"
+      method: "GET"
+      statusCode: "500"
+    properties:
+      description: "An error occurred executing the aws Translate service"
+  - location:
+      type: "RESPONSE_BODY"
+      method: "GET"
+      statusCode: "200"
+    properties:
+      description: "JSON Object with SRT s3 file Translated Text to target language"
+  - location:
+      type: "RESPONSE_BODY"
+      method: "GET"
+      statusCode: "404"
+    properties:
+      description: "Bad QueryString Parameter:Video transcription file not found or\
+        \ Translation was not possible"
+  - location:
+      type: "RESPONSE_BODY"
+      method: "GET"
+      statusCode: "412"
+    properties:
+      description: "Video language not soported"
+  - location:
+      type: "RESPONSE_BODY"
+      method: "GET"
+      statusCode: "500"
+    properties:
+      description: "Internal Error: None []"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "200"
+      name: "Access-Control-Allow-Origin"
+    properties:
+      description: "console.aws.amazon.com"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "404"
+      name: "Access-Control-Allow-Origin"
+    properties:
+      description: "console.aws.amazon.com"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "412"
+      name: "Access-Control-Allow-Origin"
+    properties:
+      description: "console.aws.amazon.com"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "500"
+      name: "Access-Control-Allow-Origin"
+    properties:
+      description: "console.aws.amazon.com"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "200"
+      name: "Content-Type"
+    properties:
+      description: "Always application/json"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "404"
+      name: "Content-Type"
+    properties:
+      description: "Always application/json"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "412"
+      name: "Content-Type"
+    properties:
+      description: "Always application/json"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "500"
+      name: "Content-Type"
+    properties:
+      description: "Always application/json"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "200"
+      name: "body"
+    properties:
+      description: "Object JSON format with the text translated into the target language"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "404"
+      name: "body"
+    properties:
+      description: "Bad QueryString Parameter:Video transcription file not found or\
+        \ Translation was not possible"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "412"
+      name: "body"
+    properties:
+      description: "Video language not soported"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "500"
+      name: "body"
+    properties:
+      description: "Internal Error"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "200"
+      name: "status"
+    properties:
+      description: "OK"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "404"
+      name: "status"
+    properties:
+      description: "Not Found"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "412"
+      name: "status"
+    properties:
+      description: "Precondition Failed"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "500"
+      name: "status"
+    properties:
+      description: "Internal Error"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "200"
+      name: "targetKey"
+    properties:
+      description: "translated s3 resource name"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "404"
+      name: "targetKey"
+    properties:
+      description: "translated s3 resource name"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "412"
+      name: "targetKey"
+    properties:
+      description: "translated s3 resource name"
+  - location:
+      type: "RESPONSE_HEADER"
+      method: "GET"
+      statusCode: "500"
+      name: "targetKey"
+    properties:
+      description: "translated s3 resource name"
+x-amazon-apigateway-request-validators:
+  Validate body, query string parameters, and headers:
+    validateRequestParameters: true
+    validateRequestBody: true
